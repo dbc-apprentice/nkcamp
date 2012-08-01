@@ -1,5 +1,5 @@
 Fabricator(:user) do
-  pw = Faker::Lorem.words(1)
+  pw = (0...8).map{97.+(rand(25)).chr}.join
   email {Faker::Internet.email}
   password {pw}
   password_confirmation {pw}

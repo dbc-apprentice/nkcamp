@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+  before_filter :authenticate_user!
+
   def index
   end
 
@@ -6,6 +8,7 @@ class ProjectsController < ApplicationController
   end
 
   def new
+
   end
 
   def edit
