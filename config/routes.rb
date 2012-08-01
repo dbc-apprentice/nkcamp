@@ -1,4 +1,9 @@
 Nkcamp::Application.routes.draw do
+  root to: redirect("/users/sign_in")
+
+  devise_for :users
+
+  # root :to
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

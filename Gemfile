@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'rails', '3.2.7'
 gem 'haml'
+gem 'devise'
 
 
 group :development, :test do
@@ -10,6 +11,8 @@ group :development, :test do
   gem 'annotate', '~> 2.4.1.beta'
   gem 'quiet_assets'
   gem 'simplecov'
+  gem 'fabrication'
+  gem 'faker'
 end
 
 
