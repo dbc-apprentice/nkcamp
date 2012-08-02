@@ -1,19 +1,6 @@
 Nkcamp::Application.routes.draw do
-  get "projects/index"
-
-  get "projects/show"
-
-  get "projects/new"
-
-  get "projects/edit"
-
-  get "projects/update"
-
-  get "projects/create"
-
-  get "projects/destroy"
-
-  # root to: "users#awesome"
+  root to: "projects#index"
+  resources :projects
 
   # root to: redirect("/users/sign_in")
 

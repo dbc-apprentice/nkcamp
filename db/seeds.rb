@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Fabricator(:project_for_first_user, class_name: :project) do
+  name        { Faker::Name.name }
+  description { Faker::Lorem.sentence }
+  user        { User.first }
+  public      { rand(2) }
+end
+
+Fabricate(:project_for_first_user)
