@@ -1,4 +1,19 @@
+-# %h1 autoMEton
+-# - @projects.each do |project|
+-#   .row
+-#     .one.column
+-#       %br
+-#       = project.name
+
 %h1 autoMEton
-- @projects.each do |project|
-  %li
-    = project.inspect
+
+.row
+  - @projects.each do |project|
+    .one.column
+      .project_box
+        .project
+          = project.name
+          %br
+            .description
+              = project.description
+
